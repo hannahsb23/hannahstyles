@@ -6,16 +6,22 @@
     <title>Hannah Styles | Pricing</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<main class="pricing-page"></main>
 <body>
-        <header>
-            <img src="images/H.png" alt="Hannah Styles logo" class="logo">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="events-themes.html">Events & Themes</a>
-                <a href="pricing.html">Pricing</a>
-            </nav>
-        </header>
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="events-themes.html">Events & Themes</a>
+        <a href="pricing.html">Pricing</a>
+        </div>
+    <header>
+        <span class="open-btn" onclick="openNav()">☰</span>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events-themes.html">Events & Themes</a>
+            <a href="pricing.html">Pricing</a>
+        </nav>
+    </header>
 
     <main>
         <section class="hero">
@@ -69,6 +75,16 @@
             </p>
         </section>
     </main>
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    </body>
 
     <footer>
         <div class="footer-content">

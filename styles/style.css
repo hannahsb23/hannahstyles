@@ -39,10 +39,17 @@ img {
 
 header {
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 60px 1fr;
     align-items: center;
-    background-color: var(--tan);
-    padding: 18px 24px;
+    background-color: #c8a48a; /* your tan */
+    padding: 15px 20px;
+}
+
+.open-btn {
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
 }
 
 .logo {
@@ -52,7 +59,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 40px;
 }
 
 nav a {
@@ -276,4 +283,50 @@ footer {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+/* SIDE NAV */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #6b6d76; /* your gray */
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #d19c1d; /* your yellow */
+  color: #33261d;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
+}
+
+.open-btn {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #c8a48a; /* your tan */
+  color: white;
+  display: inline-block;
+  margin: 10px;
 }
