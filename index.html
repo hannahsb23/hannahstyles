@@ -8,75 +8,76 @@
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="events-themes.html">Events & Themes</a>
-    <a href="pricing.html">Pricing</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="events-themes.html">Events &amp; Themes</a>
+        <a href="pricing.html">Pricing</a>
     </div>
 
     <header>
-        <span class="open-btn" onclick="openNav()">☰</span>
-
+        <span class="open-btn" onclick="openNav()">&#9776;</span>
         <nav>
             <a href="index.html">Home</a>
-            <a href="events-themes.html">Events & Themes</a>
+            <a href="events-themes.html">Events &amp; Themes</a>
             <a href="pricing.html">Pricing</a>
         </nav>
     </header>
 
-<main class="home-page">
-    <section class="hero-section">
-        <img src="images/wedding.jpg" alt="Wedding celebration">
-        <div class="hero-title-box">
-            <h1>Create Your Perfect Event</h1>
+    <main class="home-page">
+        <section class="hero-section">
+            <img src="images/wedding.jpg" alt="Wedding celebration">
+            <div class="hero-title-box">
+                <h1>Create Your Perfect Event</h1>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <p>Hannah Styles helps you plan beautiful, stress-free events for any occasion.</p>
+        </section>
+
+        <section class="offer-section">
+            <div class="offer-box">
+                <h2>What We Offer</h2>
+                <ul>
+                    <li>Event planning tips</li>
+                    <li>Unique theme ideas</li>
+                    <li>Affordable options</li>
+                </ul>
+            </div>
+
+            <div class="offer-image">
+                <img src="images/planning.jpg" alt="Party planning and decorations">
+            </div>
+        </section>
+
+        <section class="explore-section">
+            <h2>Explore</h2>
+            <div class="explore-buttons">
+                <a href="events-themes.html" class="explore-button">Themes</a>
+                <a href="pricing.html" class="explore-button">Pricing</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Hannah Styles | 2026</p>
+            <div class="socials">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
         </div>
-    </section>
+    </footer>
 
-    <section class="intro-section">
-        <p>Hannah Styles helps you plan beautiful, stress-free events for any occasion.</p>
-    </section>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
 
-    <section class="offer-section">
-        <div class="offer-box">
-            <h2>What We Offer</h2>
-            <ul>
-                <li>Event planning tips</li>
-                <li>Unique theme ideas</li>
-                <li>Affordable options</li>
-            </ul>
-        </div>
-
-        <div class="offer-image">
-            <img src="images/planning.jpg" alt="Party planning and decorations">
-        </div>
-    </section>
-
-    <section class="explore-section">
-        <h2>Explore</h2>
-        <div class="explore-buttons">
-            <a href="events-themes.html" class="explore-button">Themes</a>
-            <a href="pricing.html" class="explore-button">Pricing</a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <div class="footer-content">
-        <p>Hannah Styles | 2026</p>
-        <div class="socials">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        </div>
-    </div>
-</footer>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

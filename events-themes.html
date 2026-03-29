@@ -1,98 +1,81 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannah Styles | Events & Themes</title>
+    <title>Hannah Styles | Events &amp; Themes</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<main class="events-page"></main>
 <body>
     <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="events-themes.html">Events & Themes</a>
-    <a href="pricing.html">Pricing</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="events-themes.html">Events &amp; Themes</a>
+        <a href="pricing.html">Pricing</a>
     </div>
-        <header>
-            <span class="open-btn" onclick="openNav()">☰</span>
 
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="events-themes.html">Events & Themes</a>
-                <a href="pricing.html">Pricing</a>
-            </nav>
-        </header>
+    <header>
+        <span class="open-btn" onclick="openNav()">&#9776;</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events-themes.html">Events &amp; Themes</a>
+            <a href="pricing.html">Pricing</a>
+        </nav>
+    </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/event.jpg" alt="Elegant formal event table setup">
-            <h2>Choose a Theme That Fits Your Vision</h2>
-            <p>
-                Hannah Styles offers inspiration for a variety of events, from elegant
-                formal gatherings to fun birthday parties and festive seasonal celebrations.
-            </p>
+    <main class="events-page">
+        <section class="page-title-box">
+            <h1>Events &amp; Themes</h1>
         </section>
 
-        <section class="two-column">
-            <img src="images/formal.jpg" alt="Elegant wedding or formal event table">
-            <div>
-                <h2>Weddings / Formal Events</h2>
-                <p>
-                    Formal events are all about elegance, beauty, and thoughtful details.
-                    From table settings and floral arrangements to color palettes and décor,
-                    this style creates a polished and memorable atmosphere for special occasions.
-                </p>
+        <section class="theme-row">
+            <div class="theme-images">
+                <img src="images/birthday1.jpg" alt="Birthday party setup">
+                <img src="images/birthday2.jpg" alt="Birthday party decorations">
             </div>
+            <div class="theme-label">Birthday Parties</div>
         </section>
 
-        <section class="two-column">
-            <div>
-                <h2>Seasonal / Holiday Events</h2>
-                <p>
-                    Seasonal and holiday events bring people together in a fun and festive way.
-                    These celebrations can include themed decorations, creative food displays,
-                    and activities that match the time of year and make the event feel exciting.
-                </p>
+        <section class="theme-row">
+            <div class="theme-images">
+                <img src="images/wedding1.jpg" alt="Wedding or formal event setup">
+                <img src="images/wedding2.jpg" alt="Formal event decorations">
             </div>
-            <img src="images/holiday.jpg" alt="People celebrating at a holiday themed event">
+            <div class="theme-label">Weddings / Formal Events</div>
         </section>
 
-        <section class="two-column">
-            <img src="images/birthday.jpg" alt="Birthday party decorations and treats">
-            <div>
-                <h2>Birthday Parties</h2>
-                <p>
-                    Birthday parties are a great opportunity to be creative and personal.
-                    A fun theme, colorful decorations, and meaningful details can turn a simple
-                    gathering into a celebration that feels unique and memorable.
-                </p>
+        <section class="theme-row">
+            <div class="theme-images">
+                <img src="images/holiday1.jpg" alt="Seasonal event setup">
+                <img src="images/holiday2.jpg" alt="Holiday decorations">
             </div>
+            <div class="theme-label">Seasonal / Holiday Events</div>
+        </section>
+
+        <section class="bottom-message">
+            <h2>Choose a theme that fits your vision!</h2>
         </section>
     </main>
-    <script>
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-    </body>
 
     <footer>
         <div class="footer-content">
             <p>Hannah Styles | 2026</p>
-
             <div class="socials">
                 <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
             </div>
         </div>
-
-        <p class="site-plan"><a href="site-plan.html">View Site Plan</a></p>
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

@@ -13,6 +13,10 @@
 
 /* ---------- GENERAL ---------- */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Macondo, Arial, sans-serif;
@@ -20,12 +24,9 @@ body {
     background-color: var(--white);
 }
 
-#content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "IM Fell French Canon SC", serif;
     margin-top: 0;
 }
@@ -35,25 +36,62 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* ---------- SIDE NAV ---------- */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: var(--gray);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.4s;
+}
+
+.sidenav a {
+    display: block;
+    padding: 12px 12px 12px 30px;
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: var(--yellow);
+    color: var(--brown);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.2rem;
+    padding: 0;
+}
+
 /* ---------- HEADER ---------- */
 
 header {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 80px 1fr;
     align-items: center;
-    background-color: #c8a48a; /* your tan */
+    background-color: var(--tan);
     padding: 15px 20px;
 }
 
 .open-btn {
-    font-size: 26px;
+    font-size: 2rem;
     cursor: pointer;
-    color: white;
-    padding: 5px 10px;
-}
-
-.logo {
-    width: 70px;
+    color: var(--brown);
+    display: inline-block;
+    width: fit-content;
 }
 
 nav {
@@ -63,9 +101,9 @@ nav {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: var(--white);
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -77,8 +115,6 @@ nav a:hover {
 .home-page {
     padding-bottom: 30px;
 }
-
-/* HERO IMAGE WITH CENTER BOX */
 
 .hero-section {
     position: relative;
@@ -106,8 +142,6 @@ nav a:hover {
     font-size: 2.4rem;
 }
 
-/* INTRO TEXT BOX */
-
 .intro-section {
     background-color: var(--pink);
     border: 3px solid var(--brown);
@@ -120,21 +154,19 @@ nav a:hover {
 .intro-section p {
     margin: 0;
     font-size: 1.4rem;
+    line-height: 1.6;
 }
-
-/* WHAT WE OFFER + IMAGE */
 
 .offer-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
-    margin-bottom: 30px;
+    gap: 30px;
+    margin: 0 20px 30px;
 }
 
 .offer-box {
     background-color: var(--floral);
-    width: 75%;
-    margin-left: 25px;
     padding: 25px 30px;
     border: 5px solid var(--brown);
 }
@@ -156,8 +188,6 @@ nav a:hover {
     object-fit: cover;
 }
 
-/* EXPLORE SECTION */
-
 .explore-section {
     background-color: var(--gray);
     padding: 35px 20px;
@@ -168,13 +198,14 @@ nav a:hover {
 .explore-section h2 {
     margin-bottom: 30px;
     font-size: 2rem;
-    color: white;
+    color: var(--white);
 }
 
 .explore-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
 }
@@ -186,10 +217,76 @@ nav a:hover {
     display: inline-block;
     width: 300px;
     padding: 18px;
-    text-decoration: none;
-    color: var(--brown);
     font-size: 1.6rem;
     text-align: center;
+}
+
+.explore-button:hover {
+    background-color: var(--yellow);
+}
+
+/* ---------- EVENTS & THEMES PAGE ---------- */
+
+.events-page {
+    width: 100%;
+}
+
+.page-title-box {
+    background-color: var(--cream);
+    border: 2px solid var(--brown);
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 30px;
+}
+
+.page-title-box h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.theme-row {
+    position: relative;
+    border-left: 2px solid var(--brown);
+    border-right: 2px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
+}
+
+.theme-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.theme-images img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.theme-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cream);
+    border: 2px solid var(--brown);
+    padding: 35px 60px;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 2;
+    min-width: 320px;
+}
+
+.bottom-message {
+    background-color: var(--cream);
+    border-left: 2px solid var(--brown);
+    border-right: 2px solid var(--brown);
+    border-bottom: 2px solid var(--brown);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.bottom-message h2 {
+    margin: 0;
+    font-size: 2.2rem;
 }
 
 /* ---------- FOOTER ---------- */
@@ -197,6 +294,7 @@ nav a:hover {
 footer {
     background-color: var(--tan);
     padding: 20px 24px;
+    margin-top: 30px;
 }
 
 .footer-content {
@@ -207,7 +305,7 @@ footer {
 
 .footer-content p {
     margin: 0;
-    color: white;
+    color: var(--white);
 }
 
 .socials {
@@ -222,11 +320,14 @@ footer {
 /* ---------- MOBILE ---------- */
 
 @media screen and (max-width: 768px) {
-
     header {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 12px;
+    }
+
+    .open-btn {
+        margin: 0 auto;
     }
 
     nav {
@@ -259,19 +360,49 @@ footer {
     .offer-section {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .offer-box {
-        width: auto;
-        margin: 0 15px;
-    }
-
-    .offer-image {
-        margin: 0 15px;
+        margin: 0 15px 25px;
     }
 
     .offer-image img {
         height: 250px;
+    }
+
+    .theme-images {
+        grid-template-columns: 1fr;
+    }
+
+    .theme-images img {
+        height: 280px;
+    }
+
+    .theme-label {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        width: 85%;
+        min-width: unset;
+        padding: 25px 20px;
+        font-size: 1.4rem;
+    }
+
+    .theme-row {
+        padding-bottom: 20px;
+    }
+
+    .page-title-box {
+        padding: 60px 20px;
+    }
+
+    .page-title-box h1 {
+        font-size: 2rem;
+    }
+
+    .bottom-message {
+        padding: 60px 20px;
+    }
+
+    .bottom-message h2 {
+        font-size: 1.7rem;
     }
 
     .explore-buttons {
@@ -282,51 +413,6 @@ footer {
     .footer-content {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
     }
-}
-
-/* SIDE NAV */
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: #6b6d76; /* your gray */
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-}
-
-.sidenav a {
-  padding: 10px 10px 10px 30px;
-  text-decoration: none;
-  font-size: 22px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  background-color: #d19c1d; /* your yellow */
-  color: #33261d;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 36px;
-}
-
-.open-btn {
-  font-size: 22px;
-  cursor: pointer;
-  padding: 10px 15px;
-  background-color: #c8a48a; /* your tan */
-  color: white;
-  display: inline-block;
-  margin: 10px;
 }
