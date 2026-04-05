@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hannah Styles | Pricing</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-        <div id="mySidenav" class="sidenav">
+
+    <!-- SIDE NAV (if you're using it) -->
+    <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="events-themes.html">Events & Themes</a>
         <a href="pricing.html">Pricing</a>
-        </div>
+    </div>
+
+    <!-- HEADER -->
     <header>
         <span class="open-btn" onclick="openNav()">☰</span>
-
         <nav>
             <a href="index.html">Home</a>
             <a href="events-themes.html">Events & Themes</a>
@@ -23,81 +27,77 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/supplies.jpg" alt="Event decorations and party supplies">
-            <h2>Pricing</h2>
-            <p>
-                Hannah Styles offers simple pricing options to help clients choose the level
-                of planning support that best fits their event, style, and budget.
-            </p>
-        </section>
+    <!-- MAIN -->
+    <main class="pricing-page">
 
-        <section class="card-container">
-            <article class="card">
-                <h3>Basic Package</h3>
-                <p>Simple planning</p>
-                <p>Budget friendly</p>
-                <p><strong>Price: $xx</strong></p>
-            </article>
-
-            <article class="card">
-                <h3>Standard Package</h3>
-                <p>Planning and design ideas</p>
-                <p>Theme assistance</p>
-                <p><strong>Price: $xx</strong></p>
-            </article>
-
-            <article class="card">
-                <h3>Premium Package</h3>
-                <p>Full event planning</p>
-                <p>Custom themes</p>
-                <p><strong>Price: $xx</strong></p>
-            </article>
-        </section>
-
-        <section class="two-column">
-            <div>
-                <h2>Planning on a Budget</h2>
-                <p>
-                    A beautiful event does not have to be expensive. Careful planning,
-                    creative ideas, and thoughtful choices can help create a memorable
-                    celebration while keeping costs under control.
-                </p>
+        <!-- TOP IMAGE WITH CENTER BOX -->
+        <section class="pricing-banner">
+            <img src="images/price.jpg" alt="Event planning image">
+            <div class="pricing-title-box">
+                <h1>Pricing</h1>
             </div>
-            <img src="images/price.jpg" alt="Budget planning with calculator and money">
         </section>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>
-                Contact us to get started and find the package that works best for your event.
-            </p>
+        <!-- BASIC -->
+        <section class="package-section">
+            <h2>Basic Package</h2>
+            <ul>
+                <li>Simple planning</li>
+                <li>Budget friendly</li>
+            </ul>
+            <p>Price: $150</p>
         </section>
+
+        <!-- STANDARD -->
+        <section class="package-section">
+            <h2>Standard Package</h2>
+            <ul>
+                <li>Planning & design ideas</li>
+                <li>Theme assistance</li>
+            </ul>
+            <p>Price: $300</p>
+        </section>
+
+        <!-- PREMIUM -->
+        <section class="package-section">
+            <h2>Premium Package</h2>
+            <ul>
+                <li>Full event planning</li>
+                <li>Custom themes</li>
+            </ul>
+            <p>Price: $500</p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-pricing">
+            <h2>Contact us to get started!</h2>
+            <a class="contact-button" href="index.html">Contact Us!</a>
+        </section>
+
     </main>
-    <script>
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    }
 
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-    </body>
-
+    <!-- FOOTER -->
     <footer>
         <div class="footer-content">
-            <p>Hannah Styles | 2026</p>
-
+            <p>Hannah Styles 2026</p>
             <div class="socials">
                 <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
             </div>
         </div>
-
-        <p class="site-plan"><a href="site-plan.html">View Site Plan</a></p>
     </footer>
+
+    <!-- SIDE NAV SCRIPT -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
 </body>
 </html>
