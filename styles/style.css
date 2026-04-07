@@ -426,6 +426,16 @@ footer p {
     justify-self: center;
 }
 
+footer a {
+    color: #33261d; 
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .social {
     justify-self: end;
     display: flex;
